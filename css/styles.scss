@@ -1,0 +1,62 @@
+@import '_reset.scss';
+@import '_variables.scss';
+
+body {
+    background-color: $lightGray;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        max-width: 320px;
+        background-color: $white;
+        margin: 12px;
+        border-radius: 20px;
+        box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+
+        .qr-code {
+
+            margin: 16px;
+
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 10px;
+            }
+        }
+
+        .text {
+            h1 {
+                color: var(--Dark-Navy, #1F314F);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: Outfit;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                padding: 8px 16px;
+                margin: 0;
+            }
+
+            p {
+                color: var(--Grey, #7D889E);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+
+                font-family: Outfit;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.188px;
+                padding: 8px 32px 40px 32px;
+            }
+        }
+    }
+}
